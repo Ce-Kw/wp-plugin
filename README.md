@@ -1,3 +1,7 @@
+[![Tests](https://github.com/Ce-Kw/wp-plugin/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/Ce-Kw/wp-plugin/actions/workflows/tests.yml)
+[![Docs](https://github.com/Ce-Kw/wp-plugin/actions/workflows/docs.yml/badge.svg?branch=master)](https://github.com/Ce-Kw/wp-plugin/actions/workflows/docs.yml)
+[![pages-build-deployment](https://github.com/Ce-Kw/wp-plugin/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/Ce-Kw/wp-plugin/actions/workflows/pages/pages-build-deployment)
+
 # Plugin Framework for WordPress 🚀
 *by Christoph Ehlers & Kevin Wellmann* 
 

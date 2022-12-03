@@ -1,0 +1,3 @@
+parameters:
+	scanFiles:
+		- %rootDir%/../../php-stubs/wp-cli-stubs/wp-cli-stubs.php

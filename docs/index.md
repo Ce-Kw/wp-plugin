@@ -10,7 +10,7 @@ nav_order: 0
 Lightweight composer package to build your WordPress plugin in MVC style.
 {: .fs-6 .fw-300 }
 
-[Get started now](installation.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/cekw/wp-plugin){:target="_blank"}{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](installation.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/Ce-Kw/wp-plugin){:target="_blank"}{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -26,4 +26,4 @@ Lightweight composer package to build your WordPress plugin in MVC style.
 
 * PHP >= 8.1
 
-Read more: [Installation](/installation.html)
+Read more: [Installation](installation.html)

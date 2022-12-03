@@ -15,4 +15,4 @@ Lightweight composer package to build your WordPress plugin in MVC style.
 
 * PHP >= 8.1
 
-Read more: https://cekw.github.io/wp-plugin/installation.html
+Read more: https://ce-kw.github.io/wp-plugin/installation.html

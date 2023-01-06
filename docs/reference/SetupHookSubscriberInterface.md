@@ -60,6 +60,6 @@ SetupHookSubscriberInterface::deactivate(): void
 SetupHookSubscriberInterface::uninstall(): void
 ```
 
-* This method is **static**.
+
 
 **Returns:** `void` 

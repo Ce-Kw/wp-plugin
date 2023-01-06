@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace CEKW\WpPlugin;
 
 use Auryn\Injector;

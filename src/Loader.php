@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace CEKW\WpPlugin;
 
 use Auryn\Injector;
@@ -55,11 +57,7 @@ class Loader
         protected Injector $injector = new Injector()
     ) {
         $injector->share($GLOBALS['wpdb']);
-        $injector->share(new Config(
-            basename: plugin_basename($pluginFile),
-            dirPath: plugin_dir_path($pluginFile),
-            dirUrl: plugin_dir_url($pluginFile)
-        ));
+        $injector->share(ConfigFactory::create($pluginFile));
 
         $this->restRouteCollection = new RestRouteCollection();
         $injector->share($this->restRouteCollection);

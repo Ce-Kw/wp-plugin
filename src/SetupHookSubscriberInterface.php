@@ -13,5 +13,5 @@ interface SetupHookSubscriberInterface
 
     public function deactivate(): void;
 
-    public static function uninstall(): void;
+    public function uninstall(): void;
 }

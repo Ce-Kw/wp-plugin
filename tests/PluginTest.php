@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace CEKW\WpPlugin\Tests;
 
-use CEKW\WpPlugin\Loader;
+use CEKW\WpPlugin\Plugin;
 
 use function Brain\Monkey\Functions\expect;
 use function Brain\Monkey\Functions\when;
 
-class LoaderTest extends TestCase
+class PluginTest extends TestCase
 {
     protected function setUp(): void
     {
@@ -27,8 +27,8 @@ class LoaderTest extends TestCase
         expect('register_activation_hook')->once();
         expect('register_deactivation_hook')->once();
 
-        $loader = new Loader('');
-        $loader
+        $plugin = new Plugin('');
+        $plugin
             ->addServices([])
             ->bootstrap();
 

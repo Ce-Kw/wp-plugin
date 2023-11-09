@@ -26,15 +26,15 @@ use WP_CLI;
  * Class to initialize the framework.
  *
  * ```php
- * $loader = new \CEKW\WpPlugin\Loader(__FILE__);
- * $loader
+ * $plugin = new \CEKW\WpPlugin\Plugin(__FILE__);
+ * $plugin
  *     ->addServices([
  *         ...
  *     ])
  *     ->bootstrap();
  * ```
  */
-class Loader
+class Plugin
 {
     protected RestRouteCollection $restRouteCollection;
     /**
@@ -42,7 +42,7 @@ class Loader
      */
     protected RouteCollection $routeCollection;
     /**
-     * Instances of classes defined in `Loader::addServices()`.
+     * Instances of classes defined in `Plugin::addServices()`.
      */
     protected array $serviceInstances;
 

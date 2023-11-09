@@ -10,8 +10,8 @@ nav_order: 10
 Add the following lines to the plugins bootstrap file:
 
 ```php
-$loader = new \CEKW\WpPlugin\Loader(__FILE__);
-$loader
+$plugin = new \CEKW\WpPlugin\Plugin(__FILE__);
+$plugin
     ->addServices([
         ...
     ])
@@ -35,7 +35,7 @@ class MyCustomConfig
 }
 $injector->share(new MyCustomConfig('value'));
 
-$loader = new \CEKW\WpPlugin\Loader(__FILE__, $injector);
+$plugin = new \CEKW\WpPlugin\Plugin(__FILE__, $injector);
 ...
 ```
 
@@ -43,7 +43,7 @@ $loader = new \CEKW\WpPlugin\Loader(__FILE__, $injector);
 ```php
 ...
 global $cekwAppUrlGenerator;
-$cekwAppUrlGenerator = $loader->getUrlGenerator();
+$cekwAppUrlGenerator = $plugin->getUrlGenerator();
 
 function get_url_generator() {
     global $cekwAppUrlGenerator;
@@ -52,4 +52,4 @@ function get_url_generator() {
 }
 ```
 
-[Loader class reference](reference/Loader.html)
+[Plugin class reference](reference/Plugin.html)
